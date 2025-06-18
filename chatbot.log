@@ -613,3 +613,88 @@ WHERE gender = 'male' AND lower(location) = 'new york'
 2025-06-17 23:09:54,121 - main - INFO - Extracted SQL: SELECT * FROM customers WHERE location = 'Mumbai'
 2025-06-17 23:09:54,121 - main - INFO - Generated SQL: SELECT * FROM customers WHERE location = 'Mumbai'
 2025-06-17 23:09:54,122 - main - INFO - Query successful, execution time: 1.02s
+2025-06-18 12:45:41,082 - main - INFO - Application started
+2025-06-18 12:46:31,277 - main - INFO - Received query: show me name of all female customers
+2025-06-18 12:46:32,115 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:46:32,119 - main - INFO - LLM raw response: SELECT name FROM customers WHERE gender = 'Female'
+2025-06-18 12:46:32,119 - main - INFO - Extracted SQL: SELECT name FROM customers WHERE gender = 'Female'
+2025-06-18 12:46:32,120 - main - INFO - Generated SQL: SELECT name FROM customers WHERE gender = 'Female'
+2025-06-18 12:46:32,129 - main - INFO - Query successful, execution time: 0.85s
+2025-06-18 12:46:48,703 - main - INFO - Received query: show me place of all female customers
+2025-06-18 12:46:49,612 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:46:49,613 - main - INFO - LLM raw response: SELECT location FROM customers WHERE gender = 'Female'
+2025-06-18 12:46:49,614 - main - INFO - Extracted SQL: SELECT location FROM customers WHERE gender = 'Female'
+2025-06-18 12:46:49,614 - main - INFO - Generated SQL: SELECT location FROM customers WHERE gender = 'Female'
+2025-06-18 12:46:49,615 - main - INFO - Query successful, execution time: 0.91s
+2025-06-18 12:47:05,993 - main - INFO - Received query: show me id of all female customers
+2025-06-18 12:47:08,121 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:47:08,122 - main - INFO - LLM raw response: SELECT customer_id FROM customers WHERE gender = 'Female'
+2025-06-18 12:47:08,123 - main - INFO - Extracted SQL: SELECT customer_id FROM customers WHERE gender = 'Female'
+2025-06-18 12:47:08,123 - main - INFO - Generated SQL: SELECT customer_id FROM customers WHERE gender = 'Female'
+2025-06-18 12:47:08,124 - main - INFO - Query successful, execution time: 2.13s
+2025-06-18 12:54:46,570 - main - INFO - Received query: show me id of all male customers from mumbai
+2025-06-18 12:54:47,609 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:54:47,610 - main - INFO - LLM raw response: SELECT customer_id FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-18 12:54:47,611 - main - INFO - Extracted SQL: SELECT customer_id FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-18 12:54:47,611 - main - INFO - Generated SQL: SELECT customer_id FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-18 12:54:47,612 - main - INFO - Query successful, execution time: 1.04s
+2025-06-18 12:55:18,634 - main - INFO - Received query: count  me number  of all male customers 
+2025-06-18 12:55:19,512 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:55:19,513 - main - INFO - LLM raw response: SELECT COUNT(*) FROM customers WHERE gender = 'Male'
+2025-06-18 12:55:19,513 - main - INFO - Extracted SQL: SELECT COUNT(*) FROM customers WHERE gender = 'Male'
+2025-06-18 12:55:19,514 - main - INFO - Generated SQL: SELECT COUNT(*) FROM customers WHERE gender = 'Male'
+2025-06-18 12:55:19,519 - main - INFO - Query successful, execution time: 0.89s
+2025-06-18 12:55:49,947 - main - INFO - Received query: total number of customer
+2025-06-18 12:55:51,819 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:55:51,820 - main - INFO - LLM raw response: SELECT COUNT(*) FROM customers
+2025-06-18 12:55:51,820 - main - INFO - Extracted SQL: SELECT COUNT(*) FROM customers
+2025-06-18 12:55:51,820 - main - INFO - Generated SQL: SELECT COUNT(*) FROM customers
+2025-06-18 12:55:51,821 - main - INFO - Query successful, execution time: 1.87s
+2025-06-18 12:56:16,538 - main - INFO - Received query: total number of female customers from Mumbai
+2025-06-18 12:56:17,247 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:56:17,248 - main - INFO - LLM raw response: SELECT COUNT(*) FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-18 12:56:17,248 - main - INFO - Extracted SQL: SELECT COUNT(*) FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-18 12:56:17,248 - main - INFO - Generated SQL: SELECT COUNT(*) FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-18 12:56:17,249 - main - INFO - Query successful, execution time: 0.71s
+2025-06-18 12:59:14,610 - main - INFO - Received query: show me id of all male customers from mumbai
+2025-06-18 12:59:15,699 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:59:15,700 - main - INFO - LLM raw response: SELECT customer_id FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-18 12:59:15,700 - main - INFO - Extracted SQL: SELECT customer_id FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-18 12:59:15,701 - main - INFO - Generated SQL: SELECT customer_id FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-18 12:59:15,702 - main - INFO - Query successful, execution time: 1.09s
+2025-06-18 12:59:56,787 - main - INFO - Received query: select unique locations
+2025-06-18 12:59:57,435 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 12:59:57,436 - main - INFO - LLM raw response: SELECT DISTINCT location FROM customers
+2025-06-18 12:59:57,436 - main - INFO - Extracted SQL: SELECT DISTINCT location FROM customers
+2025-06-18 12:59:57,437 - main - INFO - Generated SQL: SELECT DISTINCT location FROM customers
+2025-06-18 12:59:57,438 - main - INFO - Query successful, execution time: 0.65s
+2025-06-18 14:29:50,690 - main - INFO - Received query: show me all female customer from mumbai
+2025-06-18 14:29:51,385 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-18 14:29:51,386 - main - INFO - LLM raw response: SELECT * FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-18 14:29:51,387 - main - INFO - Extracted SQL: SELECT * FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-18 14:29:51,387 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-18 14:29:51,389 - main - INFO - Query successful, execution time: 0.70s
+2025-06-18 15:15:37,527 - INFO - Received: show name of only male customers
+2025-06-18 15:15:38,527 - INFO - Generated SQL: SELECT name FROM customers WHERE LOWER(gender) = 'male')
+2025-06-18 15:15:38,529 - ERROR - Query failed Traceback (most recent call last):File "C:\Users\prince\Downloads\llmchatbot\main.py", line 103, in process_query
+    results = [dict(row) for row in conn.execute(sql)]
+                                    ~~~~~~~~~~~~^^^^^
+sqlite3.OperationalError: near ")": syntax error
+2025-06-18 15:17:51,641 - INFO - Received: show all male customer name
+2025-06-18 15:17:52,461 - INFO - Generated SQL: SELECT name FROM customers WHERE LOWER(gender) = 'male' )
+2025-06-18 15:17:52,462 - ERROR - Query failed Traceback (most recent call last): File "C:\Users\prince\Downloads\llmchatbot\main.py", line 114, in process_query
+    results = [dict(row) for row in conn.execute(sql)]
+                                    ~~~~~~~~~~~~^^^^^
+sqlite3.OperationalError: near ")": syntax error
+2025-06-18 15:21:26,492 - INFO - Received: show all male customers
+2025-06-18 15:21:27,813 - INFO - Generated SQL: SELECT * FROM customersWHERE LOWER(gender) = 'male'
+2025-06-18 15:21:27,815 - INFO - Returned 3 result(s) in 1.323s
+2025-06-18 15:21:39,850 - INFO - Received: count all male customers
+2025-06-18 15:21:48,618 - INFO - Generated SQL: SELECT COUNT(*) FROM customers WHERE LOWER(gender) LIKE '%male%'
+2025-06-18 15:21:48,621 - INFO - Returned 1 result(s) in 8.771s
+2025-06-18 15:26:30,583 - INFO - Application started
+2025-06-18 15:26:53,343 - INFO - Received query: count all male customers
+2025-06-18 15:26:54,089 - INFO - LLM raw response: SELECT COUNT(*) FROM customers WHERE gender = 'Male'
+2025-06-18 15:26:54,089 - INFO - Extracted SQL: SELECT COUNT(*) FROM customers WHERE gender = 'Male'
+2025-06-18 15:26:54,090 - INFO - Generated SQL: SELECT COUNT(*) FROM customers WHERE gender = 'Male'
+2025-06-18 15:26:54,091 - INFO - Query successful, execution time: 0.75s
