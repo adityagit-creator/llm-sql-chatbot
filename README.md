@@ -108,7 +108,7 @@ The application implements all required functionality:
    - Example: "Show me all female customers from Mumbai"
 
 2. **LLM Processing**: Backend sends query to Groq LLM endpoint
-   - Uses Llama3-70b model via Groq API
+   - Uses Llama4 model via Groq API
 
 3. **SQL Generation**: LLM interprets query and generates SQL
    - Converts natural language to valid SQLite queries
@@ -204,7 +204,7 @@ Environment variables:
 - **Backend**: FastAPI ✅
 - **Frontend**: Streamlit (alternative to ReactJS - provides better UX)
 - **Database**: SQLite3 ✅
-- **LLM Endpoint**: Groq (free tier) using Llama3-70b model ✅
+- **LLM Endpoint**: Groq (free tier) using Llama4 model ✅
 - **Authentication**: Token-based API security ✅
 
 ## Troubleshooting
@@ -216,7 +216,7 @@ Environment variables:
 ## Development Notes & Architecture
 
 - **Auto Database Creation**: SQLite database auto-created on first run
-- **LLM Model**: Uses Llama3-70b-8192 for optimal natural language processing
+- **LLM Model**: Uses Llama4 for optimal natural language processing
 - **Security**: SQL injection prevention through query validation
 - **Performance**: Indexed database columns for faster queries
 - **Logging**: Comprehensive logging for debugging and monitoring
