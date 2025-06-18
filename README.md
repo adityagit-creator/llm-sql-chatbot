@@ -230,15 +230,12 @@ llm-sql-chatbot/
 ├── app.py               # Streamlit frontend
 ├── requirements.txt     # Python dependencies
 ├── schema_seed.sql      # Database schema and seed data
-├── README.md           # Project documentation
+├── README.md            # Project documentation
 ├── customers.db         # SQLite database (auto-created)
-├── .env                 # Environment variables (create this)
-└── logs/               # Comprehensive logging system
-    ├── chatbot.log         # Main application logs
-    ├── errors.log          # Error tracking
-    ├── queries.log         # User query logs
-    ├── query_details.log   # Detailed query processing
-    └── sql_generation.log  # SQL generation tracking
+├── .env                 # Environment variables (create this)      
+├── chatbot.log          # Main application logs
+├── chatbot_errors.log   # Error tracking
+    
 ```
 
 ## Compliance with Requirements
