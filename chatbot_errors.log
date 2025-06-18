@@ -1,0 +1,12 @@
+2025-06-18 15:15:38,529 - ERROR - Query failed
+Traceback (most recent call last):
+  File "C:\Users\prince\Downloads\llmchatbot\main.py", line 103, in process_query
+    results = [dict(row) for row in conn.execute(sql)]
+                                    ~~~~~~~~~~~~^^^^^
+sqlite3.OperationalError: near ")": syntax error
+2025-06-18 15:17:52,462 - ERROR - Query failed
+Traceback (most recent call last):
+  File "C:\Users\prince\Downloads\llmchatbot\main.py", line 114, in process_query
+    results = [dict(row) for row in conn.execute(sql)]
+                                    ~~~~~~~~~~~~^^^^^
+sqlite3.OperationalError: near ")": syntax error
