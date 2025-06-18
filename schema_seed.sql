@@ -1,5 +1,6 @@
+-- Correct SQLite syntax
 CREATE TABLE customers (
-    customer_id INTEGER PRIMARY KEY IDENTITY(1,1),
+    customer_id INTEGER PRIMARY KEY AUTOINCREMENT, 
     name TEXT NOT NULL,
     gender TEXT,
     location TEXT
