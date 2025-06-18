@@ -153,51 +153,99 @@ CREATE TABLE customers (
 
 ```**Sample Data**: Pre-seeded with 10+ customer entries as required (minimum 5).```
 
-### Postman Testing Instructions
+# Postman Test Instructions
 
-Since we provide a Streamlit frontend instead of ReactJS, here are Postman test instructions as mentioned in the requirements:
+This guide explains how to test the FastAPI-based LLM SQL Chatbot API using Postman, including environment variable setup and API authentication.
 
-#### 1. Health Check
-```
-GET http://localhost:8000/health
-```
+---
 
-#### 2. Query Endpoint
-```
-POST http://localhost:8000/query
-Headers:
-  Content-Type: application/json
-  X-API-Key: your_api_key_here
+## 📦 1. Install Postman
 
-Body (JSON):
-{
-    "query": "Show me all female customers from Mumbai",
-    "case_sensitive": false
-}
-```
+Download and install Postman from [https://www.postman.com/downloads/](https://www.postman.com/downloads/).
 
-#### Sample Postman Collection
-Create these requests in Postman:
+---
 
-1. **Health Check**
-   - Method: GET
-   - URL: `{{base_url}}/health`
+## 📁 2. Create a New Collection
 
-2. **Female customers from Mumbai**
-   - Method: POST
-   - URL: `{{base_url}}/query`
-   - Headers: `X-API-Key: {{api_key}}`
-   - Body: `{"query": "Show me all female customers from Mumbai"}`
+1. Open Postman.
+2. Go to the **Collections** tab.
+3. Click **New Collection**.
+4. Name it `LLM SQL Chatbot API`.
+5. Click **Create**.
 
-3. **Male customers from New York**
-   - Method: POST
-   - URL: `{{base_url}}/query`
-   - Headers: `X-API-Key: {{api_key}}`
-   - Body: `{"query": "Find male customers from New York"}`
+---
 
-Environment variables:
-- `base_url`: `http://localhost:8000`
-- `api_key`: Your API key from `.env` file
+## 🔐 3. Add Environment Variables
+
+1. Click the **gear icon** (⚙️) in the top-right > choose **"Manage Environments"**.
+2. Click **Add**.
+3. Name the environment (e.g., `Local Testing`).
+4. Add the following variables:
+
+| Variable      | Initial Value            | Current Value            |
+|---------------|--------------------------|--------------------------|
+| `FASTAPI_URL` | `http://localhost:8000`  | `http://localhost:8000`  |
+| `API_KEY`     | `your-app-api-key`       | `your-app-api-key`       |
+
+> Note: This `API_KEY` refers to your **custom backend security key**, not the Groq API key.
+
+5. Click **Save**.
+6. Select the environment from the top-right dropdown.
+
+---
+
+## 🔄 4. Add and Configure Requests
+
+### 🟢 A. `POST /query` – Execute SQL from Natural Language
+
+1. In your collection, click **Add a Request**.
+2. Name it: `Execute Natural Language Query`.
+3. Set:
+   - Method: `POST`
+   - URL: `{{FASTAPI_URL}}/query`
+4. Go to the **Headers** tab:
+   - Key: `X-API-Key`
+   - Value: `{{API_KEY}}`
+5. Go to the **Body** tab:
+   - Select `raw`
+   - Choose `JSON`
+   - Sample body:
+     ```json
+     {
+       "query": "show me all female customer from mumbai",
+       "case_sensitive": false
+     }
+     ```
+6. Save the request.
+
+### 🟡 B. `GET /health` – Health Check
+
+1. Add another request to the same collection.
+2. Name it: `Health Check`.
+3. Method: `GET`
+4. URL: `{{FASTAPI_URL}}/health`
+5. Headers:
+   - Key: `X-API-Key`
+   - Value: `{{API_KEY}}`
+6. Save the request.
+
+---
+
+## ▶️ 5. Run and Test
+
+- Select your environment from the top-right dropdown.
+- Click on any request and press **Send**.
+- View the response data and status codes to verify behavior.
+
+---
+
+## ✅ Notes
+
+- `API_KEY` is for your backend authentication and is validated using the `X-API-Key` header.
+- `GROQ_API_KEY` is used **internally by the backend** and should not be exposed in Postman.
+- Always ensure the backend server is running locally on `http://localhost:8000` or change `FASTAPI_URL` accordingly.
+
+---
 
 ## Tech Stack (As Per Requirements)
 
