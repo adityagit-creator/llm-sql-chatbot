@@ -12,6 +12,22 @@ This project implements a chatbot application that:
 - Executes queries against a SQLite customer database
 - Returns formatted results to the user
 
+## Screenshots of project
+
+### 1. Main Application Interface
+![Main Interface](https://github.com/adityagit-creator/llm-sql-chatbot/blob/main/Screenshots/WhatsApp%20Image%202025-06-18%20at%2012.49.13_bd24809b.jpg)
+*Streamlit frontend showing the query input area and history sidebar*
+
+### 2. Query Processing and result display
+(https://github.com/adityagit-creator/llm-sql-chatbot/blob/main/Screenshots/WhatsApp%20Image%202025-06-18%20at%2012.57.16_6905600e.jpg)
+(https://github.com/adityagit-creator/llm-sql-chatbot/blob/main/Screenshots/WhatsApp%20Image%202025-06-18%20at%2012.57.59_bac37454.jpg)
+(https://github.com/adityagit-creator/llm-sql-chatbot/blob/main/Screenshots/WhatsApp%20Image%202025-06-18%20at%2012.59.31_d13147fa.jpg)
+(https://github.com/adityagit-creator/llm-sql-chatbot/blob/main/Screenshots/WhatsApp%20Image%202025-06-18%20at%2013.00.33_1e3d8a8b.jpg)
+
+### 4. Query History
+![Query History](Screenshots/query-history.png)
+
+
 ## Features
 
 - ✅ FastAPI backend with RESTful API
