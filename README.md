@@ -113,6 +113,7 @@ All required deliverables are included:
 
 - ✅ **FastAPI backend code** (`main.py`)
 - ✅ **SQLite schema and seed script** (`schema_seed.sql`)
+- ✅ **Error Handling**: Graceful handling of all error scenarios
 - ✅ **Frontend UI** (`app.py` - Streamlit alternative to ReactJS)
 - ✅ **ReadMe file** (this file) with setup and run instructions
 - ✅ **Requirements file** (`requirements.txt`)
@@ -140,13 +141,10 @@ The application implements all required functionality:
 
 ## Bonus Features Implemented ✅
 
-- **Comprehensive Logging**: All queries and SQL generation logged to `chatbot.log`
-- **Advanced Error Handling**: Invalid queries, SQL errors, and API failures handled gracefully
+- **Comprehensive Logging**: All queries and SQL generation logged to `chatbot.log` and `chatbot_error.log` .
 - **Environment Variables**: All configuration via `.env` file for security
 - **API Security**: Token-based authentication for all endpoints
 - **Query History**: Session-based history tracking in UI
-- **SQL Injection Protection**: Query validation and sanitization
-- **Performance Optimization**: Database indexing on frequently queried columns
 
 ## Example Queries
 
@@ -285,7 +283,6 @@ Download and install Postman from [https://www.postman.com/downloads/](https://w
 - **Auto Database Creation**: SQLite database auto-created on first run
 - **LLM Model**: Uses Llama4 for optimal natural language processing
 - **Security**: SQL injection prevention through query validation
-- **Performance**: Indexed database columns for faster queries
 - **Logging**: Comprehensive logging for debugging and monitoring
 - **Error Handling**: Graceful handling of all error scenarios
 
