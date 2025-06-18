@@ -34,7 +34,7 @@ This project implements a chatbot application that:
 ## Features
 
 - ✅ FastAPI backend with RESTful API
-- ✅ Natural language to SQL conversion using Groq's Llama3-70b model
+- ✅ Natural language to SQL conversion using Groq's Llama4 model
 - ✅ SQLite database with customer schema as specified
 - ✅ Streamlit web interface (alternative to ReactJS)
 - ✅ Comprehensive logging and error handling
