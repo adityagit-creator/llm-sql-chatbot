@@ -283,6 +283,7 @@ llm-sql-chatbot/
 ├── .env                 # Environment variables (create this)      
 ├── chatbot.log          # Main application logs
 ├── chatbot_errors.log   # Error tracking
+├── Screenshots          # screenshot of working 
     
 ```
 
