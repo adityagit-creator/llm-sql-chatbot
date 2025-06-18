@@ -1,0 +1,615 @@
+2025-06-17 19:28:57,249 - __main__ - INFO - Database initialized with sample data
+2025-06-17 19:28:57,250 - __main__ - INFO - Application startup complete
+2025-06-17 19:33:02,429 - main - INFO - Application startup complete
+2025-06-17 19:45:43,524 - main - INFO - Application startup complete
+2025-06-17 19:46:25,154 - main - INFO - Received query: show me all female candidate name
+2025-06-17 19:46:26,507 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 19:46:26,509 - main - INFO - Generated SQL: SELECT name FROM customers WHERE gender = 'female';
+2025-06-17 20:09:36,090 - main - INFO - Application startup complete
+2025-06-17 20:10:26,618 - main - INFO - Received query: Find all male customers (case_sensitive: True)
+2025-06-17 20:10:26,964 - main - INFO - Original query: Find all male customers
+2025-06-17 20:10:26,964 - main - INFO - Normalized query: Find all male customers
+2025-06-17 20:10:28,487 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 20:10:28,489 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'Male';
+2025-06-17 20:10:28,490 - main - INFO - Query returned 3 results
+2025-06-17 20:33:00,587 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 20:33:00,587 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 20:33:00,909 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:33:00,909 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 20:33:00,909 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 20:33:58,556 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 20:33:58,556 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 20:33:58,877 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:33:58,877 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 20:33:58,877 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 20:36:49,539 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 20:36:49,540 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 20:36:49,852 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:36:49,852 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 20:36:49,852 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 20:37:07,180 - main - INFO - [main.py:176] - [1750172827-2567] GET /health - Client: 127.0.0.1
+2025-06-17 20:37:07,468 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:37:07,469 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 20:37:07,470 - main - INFO - [main.py:183] - [1750172827-2567] Response: 200 - Time: 0.290s
+2025-06-17 20:37:09,527 - main - INFO - [main.py:176] - [1750172829-7451] GET /schema - Client: 127.0.0.1
+2025-06-17 20:37:09,527 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 20:37:09,528 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 20:37:09,529 - main - INFO - [main.py:183] - [1750172829-7451] Response: 200 - Time: 0.002s
+2025-06-17 20:37:20,602 - main - INFO - [main.py:176] - [1750172840-2567] GET /health - Client: 127.0.0.1
+2025-06-17 20:37:21,041 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:37:21,042 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 20:37:21,043 - main - INFO - [main.py:183] - [1750172840-2567] Response: 200 - Time: 0.441s
+2025-06-17 20:37:23,075 - main - INFO - [main.py:176] - [1750172843-7451] GET /schema - Client: 127.0.0.1
+2025-06-17 20:37:23,076 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 20:37:23,077 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 20:37:23,078 - main - INFO - [main.py:183] - [1750172843-7451] Response: 200 - Time: 0.002s
+2025-06-17 20:37:27,686 - main - INFO - [main.py:176] - [1750172847-2567] GET /health - Client: 127.0.0.1
+2025-06-17 20:37:28,172 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:37:28,172 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 20:37:28,173 - main - INFO - [main.py:183] - [1750172847-2567] Response: 200 - Time: 0.487s
+2025-06-17 20:37:30,185 - main - INFO - [main.py:176] - [1750172850-7451] GET /schema - Client: 127.0.0.1
+2025-06-17 20:37:30,186 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 20:37:30,187 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 20:37:30,187 - main - INFO - [main.py:183] - [1750172850-7451] Response: 200 - Time: 0.002s
+2025-06-17 20:50:09,648 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 20:50:09,648 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 20:50:10,046 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:50:10,046 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 20:50:10,046 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 20:50:40,549 - main - INFO - [main.py:176] - [1750173640-3104] GET /health - Client: 127.0.0.1
+2025-06-17 20:50:40,895 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:50:40,895 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 20:50:40,896 - main - INFO - [main.py:183] - [1750173640-3104] Response: 200 - Time: 0.347s
+2025-06-17 20:50:42,919 - main - INFO - [main.py:176] - [1750173642-5433] GET /schema - Client: 127.0.0.1
+2025-06-17 20:50:42,920 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 20:50:42,921 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 20:50:42,921 - main - INFO - [main.py:183] - [1750173642-5433] Response: 200 - Time: 0.002s
+2025-06-17 20:50:59,082 - main - INFO - [main.py:176] - [1750173659-3104] GET /health - Client: 127.0.0.1
+2025-06-17 20:50:59,692 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:50:59,692 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 20:50:59,694 - main - INFO - [main.py:183] - [1750173659-3104] Response: 200 - Time: 0.611s
+2025-06-17 20:51:01,725 - main - INFO - [main.py:176] - [1750173661-5433] GET /schema - Client: 127.0.0.1
+2025-06-17 20:51:01,725 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 20:51:01,726 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 20:51:01,727 - main - INFO - [main.py:183] - [1750173661-5433] Response: 200 - Time: 0.002s
+2025-06-17 20:51:03,789 - main - INFO - [main.py:176] - [1750173663-8358] GET /logs - Client: 127.0.0.1
+2025-06-17 20:51:03,791 - main - INFO - [main.py:600] - Fetching last 50 log entries
+2025-06-17 20:51:03,808 - main - INFO - [main.py:183] - [1750173663-8358] Response: 200 - Time: 0.019s
+2025-06-17 20:52:14,695 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 20:52:14,695 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 20:52:15,078 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:52:15,078 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 20:52:15,078 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 20:52:25,313 - main - INFO - [main.py:176] - [1750173745-9093] GET /health - Client: 127.0.0.1
+2025-06-17 20:52:25,927 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 20:52:25,928 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 20:52:25,930 - main - INFO - [main.py:183] - [1750173745-9093] Response: 200 - Time: 0.617s
+2025-06-17 20:52:27,973 - main - INFO - [main.py:176] - [1750173747-7607] GET /schema - Client: 127.0.0.1
+2025-06-17 20:52:27,974 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 20:52:27,975 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 20:52:27,976 - main - INFO - [main.py:183] - [1750173747-7607] Response: 200 - Time: 0.003s
+2025-06-17 21:09:48,917 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:09:48,917 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:09:49,336 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:09:49,336 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:09:49,336 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:10:12,011 - main - INFO - [main.py:176] - [1750174812-8648] GET /health - Client: 127.0.0.1
+2025-06-17 21:10:12,354 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:10:12,355 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:10:12,356 - main - INFO - [main.py:183] - [1750174812-8648] Response: 200 - Time: 0.346s
+2025-06-17 21:10:25,756 - main - INFO - [main.py:176] - [1750174825-8648] GET /health - Client: 127.0.0.1
+2025-06-17 21:10:26,128 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:10:26,128 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:10:26,130 - main - INFO - [main.py:183] - [1750174825-8648] Response: 200 - Time: 0.374s
+2025-06-17 21:10:32,213 - main - INFO - [main.py:176] - [1750174832-8648] GET /health - Client: 127.0.0.1
+2025-06-17 21:10:32,556 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:10:32,557 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:10:32,558 - main - INFO - [main.py:183] - [1750174832-8648] Response: 200 - Time: 0.345s
+2025-06-17 21:10:49,605 - main - INFO - [main.py:176] - [1750174849-8648] GET /health - Client: 127.0.0.1
+2025-06-17 21:10:49,954 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:10:49,962 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:10:49,964 - main - INFO - [main.py:183] - [1750174849-8648] Response: 200 - Time: 0.358s
+2025-06-17 21:10:53,950 - main - INFO - [main.py:176] - [1750174853-8648] GET /health - Client: 127.0.0.1
+2025-06-17 21:10:54,298 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:10:54,298 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:10:54,299 - main - INFO - [main.py:183] - [1750174853-8648] Response: 200 - Time: 0.349s
+2025-06-17 21:11:24,366 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:11:24,367 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:11:24,765 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:11:24,765 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:11:24,765 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:11:38,728 - main - INFO - [main.py:176] - [1750174898-76] GET /health - Client: 127.0.0.1
+2025-06-17 21:11:39,215 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:11:39,215 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:11:39,217 - main - INFO - [main.py:183] - [1750174898-76] Response: 200 - Time: 0.489s
+2025-06-17 21:11:41,282 - main - INFO - [main.py:176] - [1750174901-6454] GET /schema - Client: 127.0.0.1
+2025-06-17 21:11:41,283 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:11:41,284 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:11:41,285 - main - INFO - [main.py:183] - [1750174901-6454] Response: 200 - Time: 0.003s
+2025-06-17 21:11:56,658 - main - INFO - [main.py:176] - [1750174916-76] GET /health - Client: 127.0.0.1
+2025-06-17 21:11:57,253 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:11:57,254 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:11:57,256 - main - INFO - [main.py:183] - [1750174916-76] Response: 200 - Time: 0.597s
+2025-06-17 21:11:59,315 - main - INFO - [main.py:176] - [1750174919-6454] GET /schema - Client: 127.0.0.1
+2025-06-17 21:11:59,315 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:11:59,317 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:11:59,317 - main - INFO - [main.py:183] - [1750174919-6454] Response: 200 - Time: 0.003s
+2025-06-17 21:12:05,702 - main - INFO - [main.py:176] - [1750174925-76] GET /health - Client: 127.0.0.1
+2025-06-17 21:12:06,165 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:12:06,165 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:12:06,167 - main - INFO - [main.py:183] - [1750174925-76] Response: 200 - Time: 0.465s
+2025-06-17 21:12:08,212 - main - INFO - [main.py:176] - [1750174928-6454] GET /schema - Client: 127.0.0.1
+2025-06-17 21:12:08,212 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:12:08,214 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:12:08,214 - main - INFO - [main.py:183] - [1750174928-6454] Response: 200 - Time: 0.003s
+2025-06-17 21:13:10,969 - main - INFO - [main.py:176] - [1750174990-76] GET /health - Client: 127.0.0.1
+2025-06-17 21:13:11,341 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:13:11,341 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:13:11,344 - main - INFO - [main.py:183] - [1750174990-76] Response: 200 - Time: 0.374s
+2025-06-17 21:13:13,383 - main - INFO - [main.py:176] - [1750174993-6454] GET /schema - Client: 127.0.0.1
+2025-06-17 21:13:13,383 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:13:13,385 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:13:13,385 - main - INFO - [main.py:183] - [1750174993-6454] Response: 200 - Time: 0.003s
+2025-06-17 21:13:29,329 - main - INFO - [main.py:176] - [1750175009-76] GET /health - Client: 127.0.0.1
+2025-06-17 21:13:29,940 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:13:29,940 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:13:29,942 - main - INFO - [main.py:183] - [1750175009-76] Response: 200 - Time: 0.613s
+2025-06-17 21:13:32,001 - main - INFO - [main.py:176] - [1750175012-6454] GET /schema - Client: 127.0.0.1
+2025-06-17 21:13:32,002 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:13:32,003 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:13:32,004 - main - INFO - [main.py:183] - [1750175012-6454] Response: 200 - Time: 0.003s
+2025-06-17 21:13:35,267 - main - INFO - [main.py:176] - [1750175015-76] GET /health - Client: 127.0.0.1
+2025-06-17 21:13:35,879 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:13:35,879 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:13:35,880 - main - INFO - [main.py:183] - [1750175015-76] Response: 200 - Time: 0.613s
+2025-06-17 21:13:37,919 - main - INFO - [main.py:176] - [1750175017-6454] GET /schema - Client: 127.0.0.1
+2025-06-17 21:13:37,920 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:13:37,921 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:13:37,922 - main - INFO - [main.py:183] - [1750175017-6454] Response: 200 - Time: 0.003s
+2025-06-17 21:15:19,709 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:15:19,709 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:15:20,129 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:15:20,129 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:15:20,130 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:15:40,506 - main - INFO - [main.py:176] - [1750175140-5520] GET /health - Client: 127.0.0.1
+2025-06-17 21:15:41,013 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:15:41,013 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:15:41,015 - main - INFO - [main.py:183] - [1750175140-5520] Response: 200 - Time: 0.509s
+2025-06-17 21:15:43,103 - main - INFO - [main.py:176] - [1750175143-8135] GET /schema - Client: 127.0.0.1
+2025-06-17 21:15:43,103 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:15:43,105 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:15:43,105 - main - INFO - [main.py:183] - [1750175143-8135] Response: 200 - Time: 0.003s
+2025-06-17 21:16:20,171 - main - INFO - [main.py:176] - [1750175180-5520] GET /health - Client: 127.0.0.1
+2025-06-17 21:16:20,712 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:16:20,713 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:16:20,714 - main - INFO - [main.py:183] - [1750175180-5520] Response: 200 - Time: 0.544s
+2025-06-17 21:16:22,783 - main - INFO - [main.py:176] - [1750175182-8135] GET /schema - Client: 127.0.0.1
+2025-06-17 21:16:22,783 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:16:22,785 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:16:22,785 - main - INFO - [main.py:183] - [1750175182-8135] Response: 200 - Time: 0.003s
+2025-06-17 21:16:27,344 - main - INFO - [main.py:176] - [1750175187-5520] GET /health - Client: 127.0.0.1
+2025-06-17 21:16:27,794 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:16:27,794 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:16:27,795 - main - INFO - [main.py:183] - [1750175187-5520] Response: 200 - Time: 0.452s
+2025-06-17 21:16:29,843 - main - INFO - [main.py:176] - [1750175189-8135] GET /schema - Client: 127.0.0.1
+2025-06-17 21:16:29,843 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:16:29,845 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:16:29,845 - main - INFO - [main.py:183] - [1750175189-8135] Response: 200 - Time: 0.002s
+2025-06-17 21:16:35,692 - main - INFO - [main.py:176] - [1750175195-5520] GET /health - Client: 127.0.0.1
+2025-06-17 21:16:36,094 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:16:36,095 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:16:36,096 - main - INFO - [main.py:183] - [1750175195-5520] Response: 200 - Time: 0.404s
+2025-06-17 21:16:38,128 - main - INFO - [main.py:176] - [1750175198-8135] GET /schema - Client: 127.0.0.1
+2025-06-17 21:16:38,128 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:16:38,130 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:16:38,130 - main - INFO - [main.py:183] - [1750175198-8135] Response: 200 - Time: 0.003s
+2025-06-17 21:16:44,871 - main - INFO - [main.py:176] - [1750175204-5520] GET /health - Client: 127.0.0.1
+2025-06-17 21:16:45,417 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:16:45,418 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:16:45,419 - main - INFO - [main.py:183] - [1750175204-5520] Response: 200 - Time: 0.548s
+2025-06-17 21:16:47,487 - main - INFO - [main.py:176] - [1750175207-8135] GET /schema - Client: 127.0.0.1
+2025-06-17 21:16:47,488 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:16:47,489 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:16:47,490 - main - INFO - [main.py:183] - [1750175207-8135] Response: 200 - Time: 0.003s
+2025-06-17 21:17:19,898 - main - INFO - [main.py:176] - [1750175239-5520] GET /health - Client: 127.0.0.1
+2025-06-17 21:17:20,304 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:17:20,304 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:17:20,306 - main - INFO - [main.py:183] - [1750175239-5520] Response: 200 - Time: 0.408s
+2025-06-17 21:17:22,339 - main - INFO - [main.py:176] - [1750175242-8135] GET /schema - Client: 127.0.0.1
+2025-06-17 21:17:22,340 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:17:22,341 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:17:22,341 - main - INFO - [main.py:183] - [1750175242-8135] Response: 200 - Time: 0.002s
+2025-06-17 21:17:27,086 - main - INFO - [main.py:176] - [1750175247-5520] GET /health - Client: 127.0.0.1
+2025-06-17 21:17:27,542 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:17:27,543 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:17:27,544 - main - INFO - [main.py:183] - [1750175247-5520] Response: 200 - Time: 0.458s
+2025-06-17 21:17:29,618 - main - INFO - [main.py:176] - [1750175249-8135] GET /schema - Client: 127.0.0.1
+2025-06-17 21:17:29,618 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:17:29,620 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:17:29,620 - main - INFO - [main.py:183] - [1750175249-8135] Response: 200 - Time: 0.002s
+2025-06-17 21:17:33,068 - main - INFO - [main.py:176] - [1750175253-5520] GET /health - Client: 127.0.0.1
+2025-06-17 21:17:33,622 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:17:33,623 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:17:33,625 - main - INFO - [main.py:183] - [1750175253-5520] Response: 200 - Time: 0.557s
+2025-06-17 21:17:35,708 - main - INFO - [main.py:176] - [1750175255-8135] GET /schema - Client: 127.0.0.1
+2025-06-17 21:17:35,708 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:17:35,710 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:17:35,710 - main - INFO - [main.py:183] - [1750175255-8135] Response: 200 - Time: 0.002s
+2025-06-17 21:18:32,503 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:18:32,503 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:18:32,892 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:18:32,892 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:18:32,893 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:19:05,491 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:19:05,491 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:19:05,866 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:19:05,867 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:19:05,867 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:19:29,925 - main - INFO - [main.py:176] - [1750175369-9738] GET /health - Client: 127.0.0.1
+2025-06-17 21:19:30,507 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:19:30,507 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:19:30,510 - main - INFO - [main.py:183] - [1750175369-9738] Response: 200 - Time: 0.584s
+2025-06-17 21:19:32,534 - main - INFO - [main.py:176] - [1750175372-492] GET /schema - Client: 127.0.0.1
+2025-06-17 21:19:32,534 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:19:32,535 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:19:32,536 - main - INFO - [main.py:183] - [1750175372-492] Response: 200 - Time: 0.002s
+2025-06-17 21:19:38,839 - main - INFO - [main.py:176] - [1750175378-9738] GET /health - Client: 127.0.0.1
+2025-06-17 21:19:39,363 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:19:39,363 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:19:39,365 - main - INFO - [main.py:183] - [1750175378-9738] Response: 200 - Time: 0.526s
+2025-06-17 21:19:41,427 - main - INFO - [main.py:176] - [1750175381-492] GET /schema - Client: 127.0.0.1
+2025-06-17 21:19:41,428 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:19:41,430 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:19:41,430 - main - INFO - [main.py:183] - [1750175381-492] Response: 200 - Time: 0.003s
+2025-06-17 21:19:45,860 - main - INFO - [main.py:176] - [1750175385-9738] GET /health - Client: 127.0.0.1
+2025-06-17 21:19:46,406 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:19:46,406 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:19:46,408 - main - INFO - [main.py:183] - [1750175385-9738] Response: 200 - Time: 0.548s
+2025-06-17 21:19:48,464 - main - INFO - [main.py:176] - [1750175388-492] GET /schema - Client: 127.0.0.1
+2025-06-17 21:19:48,465 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:19:48,466 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:19:48,466 - main - INFO - [main.py:183] - [1750175388-492] Response: 200 - Time: 0.003s
+2025-06-17 21:19:59,091 - main - INFO - [main.py:176] - [1750175399-9738] GET /health - Client: 127.0.0.1
+2025-06-17 21:19:59,676 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:19:59,677 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:19:59,678 - main - INFO - [main.py:183] - [1750175399-9738] Response: 200 - Time: 0.587s
+2025-06-17 21:20:01,748 - main - INFO - [main.py:176] - [1750175401-492] GET /schema - Client: 127.0.0.1
+2025-06-17 21:20:01,749 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:20:01,750 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:20:01,751 - main - INFO - [main.py:183] - [1750175401-492] Response: 200 - Time: 0.003s
+2025-06-17 21:20:03,829 - main - INFO - [main.py:176] - [1750175403-644] GET /logs - Client: 127.0.0.1
+2025-06-17 21:20:03,831 - main - INFO - [main.py:600] - Fetching last 50 log entries
+2025-06-17 21:20:03,850 - main - INFO - [main.py:183] - [1750175403-644] Response: 200 - Time: 0.021s
+2025-06-17 21:31:54,723 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:31:54,724 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:31:55,100 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:31:55,100 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:31:55,101 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:32:26,602 - main - INFO - [main.py:176] - [1750176146-6539] GET /health - Client: 127.0.0.1
+2025-06-17 21:32:27,147 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:32:27,147 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:32:27,149 - main - INFO - [main.py:183] - [1750176146-6539] Response: 200 - Time: 0.546s
+2025-06-17 21:32:29,205 - main - INFO - [main.py:176] - [1750176149-4558] GET /schema - Client: 127.0.0.1
+2025-06-17 21:32:29,206 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:32:29,207 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:32:29,208 - main - INFO - [main.py:183] - [1750176149-4558] Response: 200 - Time: 0.002s
+2025-06-17 21:32:34,944 - main - INFO - [main.py:176] - [1750176154-6539] GET /health - Client: 127.0.0.1
+2025-06-17 21:32:35,354 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:32:35,355 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:32:35,356 - main - INFO - [main.py:183] - [1750176154-6539] Response: 200 - Time: 0.412s
+2025-06-17 21:32:37,428 - main - INFO - [main.py:176] - [1750176157-4558] GET /schema - Client: 127.0.0.1
+2025-06-17 21:32:37,428 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:32:37,430 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:32:37,430 - main - INFO - [main.py:183] - [1750176157-4558] Response: 200 - Time: 0.002s
+2025-06-17 21:32:42,209 - main - INFO - [main.py:176] - [1750176162-6539] GET /health - Client: 127.0.0.1
+2025-06-17 21:32:42,735 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:32:42,736 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:32:42,737 - main - INFO - [main.py:183] - [1750176162-6539] Response: 200 - Time: 0.528s
+2025-06-17 21:32:44,785 - main - INFO - [main.py:176] - [1750176164-4558] GET /schema - Client: 127.0.0.1
+2025-06-17 21:32:44,785 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:32:44,787 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:32:44,787 - main - INFO - [main.py:183] - [1750176164-4558] Response: 200 - Time: 0.003s
+2025-06-17 21:37:02,367 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:37:02,367 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:37:02,743 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:37:02,744 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:37:02,744 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:37:24,002 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:37:24,003 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:37:24,419 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:37:24,419 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:37:24,419 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:37:27,480 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:37:27,481 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:37:27,879 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:37:27,880 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:37:27,880 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:37:33,886 - main - INFO - [main.py:176] - [1750176453-7851] GET /health - Client: 127.0.0.1
+2025-06-17 21:37:34,367 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:37:34,367 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:37:34,370 - main - INFO - [main.py:183] - [1750176453-7851] Response: 200 - Time: 0.484s
+2025-06-17 21:37:36,431 - main - INFO - [main.py:176] - [1750176456-973] GET /schema - Client: 127.0.0.1
+2025-06-17 21:37:36,432 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:37:36,433 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:37:36,433 - main - INFO - [main.py:183] - [1750176456-973] Response: 200 - Time: 0.002s
+2025-06-17 21:37:41,815 - main - INFO - [main.py:176] - [1750176461-7851] GET /health - Client: 127.0.0.1
+2025-06-17 21:37:42,217 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:37:42,217 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:37:42,219 - main - INFO - [main.py:183] - [1750176461-7851] Response: 200 - Time: 0.403s
+2025-06-17 21:37:44,264 - main - INFO - [main.py:176] - [1750176464-973] GET /schema - Client: 127.0.0.1
+2025-06-17 21:37:44,265 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:37:44,266 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:37:44,266 - main - INFO - [main.py:183] - [1750176464-973] Response: 200 - Time: 0.002s
+2025-06-17 21:37:49,814 - main - INFO - [main.py:176] - [1750176469-7851] GET /health - Client: 127.0.0.1
+2025-06-17 21:37:50,400 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:37:50,400 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:37:50,402 - main - INFO - [main.py:183] - [1750176469-7851] Response: 200 - Time: 0.588s
+2025-06-17 21:37:52,461 - main - INFO - [main.py:176] - [1750176472-973] GET /schema - Client: 127.0.0.1
+2025-06-17 21:37:52,461 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:37:52,463 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:37:52,463 - main - INFO - [main.py:183] - [1750176472-973] Response: 200 - Time: 0.003s
+2025-06-17 21:39:39,520 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 21:39:39,520 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 21:39:39,899 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:39:39,899 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 21:39:39,899 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 21:40:06,798 - main - INFO - [main.py:176] - [1750176606-5212] GET /health - Client: 127.0.0.1
+2025-06-17 21:40:07,236 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:40:07,237 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:40:07,239 - main - INFO - [main.py:183] - [1750176606-5212] Response: 200 - Time: 0.441s
+2025-06-17 21:40:09,293 - main - INFO - [main.py:176] - [1750176609-7499] GET /schema - Client: 127.0.0.1
+2025-06-17 21:40:09,294 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:40:09,295 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:40:09,295 - main - INFO - [main.py:183] - [1750176609-7499] Response: 200 - Time: 0.003s
+2025-06-17 21:40:18,284 - main - INFO - [main.py:176] - [1750176618-5212] GET /health - Client: 127.0.0.1
+2025-06-17 21:40:18,878 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:40:18,878 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:40:18,880 - main - INFO - [main.py:183] - [1750176618-5212] Response: 200 - Time: 0.595s
+2025-06-17 21:40:20,932 - main - INFO - [main.py:176] - [1750176620-7499] GET /schema - Client: 127.0.0.1
+2025-06-17 21:40:20,932 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:40:20,934 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:40:20,934 - main - INFO - [main.py:183] - [1750176620-7499] Response: 200 - Time: 0.002s
+2025-06-17 21:40:23,012 - main - INFO - [main.py:176] - [1750176623-2833] GET /logs - Client: 127.0.0.1
+2025-06-17 21:40:23,015 - main - INFO - [main.py:600] - Fetching last 50 log entries
+2025-06-17 21:40:23,028 - main - INFO - [main.py:183] - [1750176623-2833] Response: 200 - Time: 0.016s
+2025-06-17 21:40:38,258 - main - INFO - [main.py:176] - [1750176638-5212] GET /health - Client: 127.0.0.1
+2025-06-17 21:40:38,736 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:40:38,736 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:40:38,739 - main - INFO - [main.py:183] - [1750176638-5212] Response: 200 - Time: 0.482s
+2025-06-17 21:40:40,796 - main - INFO - [main.py:176] - [1750176640-7499] GET /schema - Client: 127.0.0.1
+2025-06-17 21:40:40,797 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:40:40,798 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:40:40,799 - main - INFO - [main.py:183] - [1750176640-7499] Response: 200 - Time: 0.002s
+2025-06-17 21:40:42,885 - main - INFO - [main.py:176] - [1750176642-2833] GET /logs - Client: 127.0.0.1
+2025-06-17 21:40:42,886 - main - INFO - [main.py:600] - Fetching last 50 log entries
+2025-06-17 21:40:42,899 - main - INFO - [main.py:183] - [1750176642-2833] Response: 200 - Time: 0.014s
+2025-06-17 21:40:43,971 - main - INFO - [main.py:176] - [1750176643-5212] GET /health - Client: 127.0.0.1
+2025-06-17 21:40:44,393 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 21:40:44,393 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 21:40:44,394 - main - INFO - [main.py:183] - [1750176643-5212] Response: 200 - Time: 0.424s
+2025-06-17 21:40:46,438 - main - INFO - [main.py:176] - [1750176646-7499] GET /schema - Client: 127.0.0.1
+2025-06-17 21:40:46,439 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 21:40:46,440 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 21:40:46,440 - main - INFO - [main.py:183] - [1750176646-7499] Response: 200 - Time: 0.002s
+2025-06-17 21:40:48,507 - main - INFO - [main.py:176] - [1750176648-2833] GET /logs - Client: 127.0.0.1
+2025-06-17 21:40:48,508 - main - INFO - [main.py:600] - Fetching last 50 log entries
+2025-06-17 21:40:48,521 - main - INFO - [main.py:183] - [1750176648-2833] Response: 200 - Time: 0.014s
+2025-06-17 21:56:55,078 - main - INFO - [main.py:506] - Starting application initialization
+2025-06-17 21:56:55,079 - main - INFO - [main.py:494] - Database already exists, skipping initialization
+2025-06-17 21:56:55,079 - main - INFO - [main.py:516] - GROQ_API_KEY found
+2025-06-17 21:56:55,079 - main - INFO - [main.py:523] - API_KEY configured - authentication enabled
+2025-06-17 21:56:55,079 - main - INFO - [main.py:525] - Application startup completed successfully
+2025-06-17 21:57:17,231 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:57:17,231 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:57:19,287 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:57:19,289 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:57:26,780 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:57:26,781 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:57:28,831 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:57:28,832 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:57:31,439 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:57:31,440 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:57:33,500 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:57:33,501 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:57:38,453 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:57:38,453 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:57:40,512 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:57:40,514 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:57:43,020 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:57:43,020 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:57:45,078 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:57:45,079 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:57:50,240 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:57:50,240 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:57:52,301 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:57:52,303 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:58:17,003 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:58:17,004 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:58:19,035 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:58:19,037 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:58:21,672 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:58:21,672 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:58:23,232 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:58:23,232 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:58:25,262 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:58:25,263 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:58:27,357 - main - INFO - [main.py:337] - Processing query: 'Count customers by gender' (case_sensitive: True)
+2025-06-17 21:58:27,357 - main - INFO - [main.py:197] - Starting SQL generation for query: 'Count customers by gender' (case_sensitive: True)
+2025-06-17 21:58:27,893 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:58:28,562 - main - INFO - [main.py:278] - SQL generation successful in 1.205s: SELECT gender, COUNT(*) FROM customers GROUP BY gender;
+2025-06-17 21:58:28,562 - main - INFO - [main.py:296] - Executing SQL query: SELECT gender, COUNT(*) FROM customers GROUP BY gender;
+2025-06-17 21:58:28,563 - main - INFO - [main.py:309] - SQL execution completed in 0.001s, returned 2 results
+2025-06-17 21:58:28,563 - main - INFO - [main.py:360] - Query processed successfully in 1.207s, returned 2 results
+2025-06-17 21:58:30,154 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:58:30,154 - main - INFO - [main.py:396] - Health check passed
+2025-06-17 21:58:32,193 - main - INFO - [main.py:412] - Fetching database schema
+2025-06-17 21:58:32,194 - main - INFO - [main.py:438] - Schema fetched successfully, 7 total records
+2025-06-17 21:59:09,137 - main - INFO - [main.py:596] - Starting application initialization
+2025-06-17 21:59:09,138 - main - INFO - [main.py:575] - Database already exists, skipping initialization
+2025-06-17 21:59:09,139 - main - INFO - [main.py:584] - Database exists with 7 records
+2025-06-17 21:59:09,139 - main - INFO - [main.py:606] - GROQ_API_KEY found
+2025-06-17 21:59:09,539 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:59:09,539 - main - INFO - [main.py:611] - Groq client test successful
+2025-06-17 21:59:09,539 - main - INFO - [main.py:620] - API_KEY configured - authentication enabled
+2025-06-17 21:59:09,539 - main - INFO - [main.py:622] - Application startup completed successfully
+2025-06-17 21:59:40,314 - main - INFO - [main.py:596] - Starting application initialization
+2025-06-17 21:59:40,314 - main - INFO - [main.py:575] - Database already exists, skipping initialization
+2025-06-17 21:59:40,316 - main - INFO - [main.py:584] - Database exists with 7 records
+2025-06-17 21:59:40,316 - main - INFO - [main.py:606] - GROQ_API_KEY found
+2025-06-17 21:59:40,713 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 21:59:40,714 - main - INFO - [main.py:611] - Groq client test successful
+2025-06-17 21:59:40,714 - main - INFO - [main.py:620] - API_KEY configured - authentication enabled
+2025-06-17 21:59:40,714 - main - INFO - [main.py:622] - Application startup completed successfully
+2025-06-17 22:00:02,003 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 22:00:02,003 - main - INFO - [main.py:439] - Health check passed
+2025-06-17 22:00:04,058 - main - INFO - [main.py:455] - Fetching database schema
+2025-06-17 22:00:04,059 - main - INFO - [main.py:490] - Schema fetched successfully, 7 total records
+2025-06-17 22:00:10,977 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 22:00:10,978 - main - INFO - [main.py:439] - Health check passed
+2025-06-17 22:00:13,005 - main - INFO - [main.py:455] - Fetching database schema
+2025-06-17 22:00:13,006 - main - INFO - [main.py:490] - Schema fetched successfully, 7 total records
+2025-06-17 22:00:15,715 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 22:00:15,715 - main - INFO - [main.py:439] - Health check passed
+2025-06-17 22:00:17,775 - main - INFO - [main.py:455] - Fetching database schema
+2025-06-17 22:00:17,777 - main - INFO - [main.py:490] - Schema fetched successfully, 7 total records
+2025-06-17 22:00:22,468 - main - INFO - [main.py:151] - Groq client initialized successfully
+2025-06-17 22:00:22,468 - main - INFO - [main.py:439] - Health check passed
+2025-06-17 22:00:24,504 - main - INFO - [main.py:455] - Fetching database schema
+2025-06-17 22:00:24,505 - main - INFO - [main.py:490] - Schema fetched successfully, 7 total records
+2025-06-17 22:05:05,630 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 22:05:05,630 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 22:05:05,962 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 22:05:05,962 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 22:05:05,963 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 22:05:23,528 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 22:05:23,528 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 22:05:23,860 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 22:05:23,861 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 22:05:23,861 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 22:05:56,531 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 22:05:56,531 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 22:05:56,851 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 22:05:56,852 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 22:05:56,852 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 22:06:15,178 - main - INFO - [main.py:176] - [1750178175-7219] GET /health - Client: 127.0.0.1
+2025-06-17 22:06:15,630 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 22:06:15,630 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 22:06:15,632 - main - INFO - [main.py:183] - [1750178175-7219] Response: 200 - Time: 0.453s
+2025-06-17 22:06:17,697 - main - INFO - [main.py:176] - [1750178177-2879] GET /schema - Client: 127.0.0.1
+2025-06-17 22:06:17,698 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 22:06:17,699 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 22:06:17,699 - main - INFO - [main.py:183] - [1750178177-2879] Response: 200 - Time: 0.002s
+2025-06-17 22:06:24,460 - main - INFO - [main.py:176] - [1750178184-7219] GET /health - Client: 127.0.0.1
+2025-06-17 22:06:24,839 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 22:06:24,840 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 22:06:24,841 - main - INFO - [main.py:183] - [1750178184-7219] Response: 200 - Time: 0.381s
+2025-06-17 22:06:26,884 - main - INFO - [main.py:176] - [1750178186-2879] GET /schema - Client: 127.0.0.1
+2025-06-17 22:06:26,884 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 22:06:26,885 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 22:06:26,885 - main - INFO - [main.py:183] - [1750178186-2879] Response: 200 - Time: 0.002s
+2025-06-17 22:06:30,983 - main - INFO - [main.py:176] - [1750178190-7219] GET /health - Client: 127.0.0.1
+2025-06-17 22:06:31,405 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 22:06:31,405 - main - INFO - [main.py:547] - Health check passed
+2025-06-17 22:06:31,406 - main - INFO - [main.py:183] - [1750178190-7219] Response: 200 - Time: 0.423s
+2025-06-17 22:06:33,446 - main - INFO - [main.py:176] - [1750178193-2879] GET /schema - Client: 127.0.0.1
+2025-06-17 22:06:33,446 - main - INFO - [main.py:563] - Fetching database schema
+2025-06-17 22:06:33,447 - main - INFO - [main.py:589] - Schema fetched successfully, 7 total records
+2025-06-17 22:06:33,448 - main - INFO - [main.py:183] - [1750178193-2879] Response: 200 - Time: 0.002s
+2025-06-17 22:18:18,391 - main - INFO - [main.py:676] - Starting application initialization
+2025-06-17 22:18:18,392 - main - INFO - [main.py:664] - Database already exists, skipping initialization
+2025-06-17 22:18:18,711 - main - INFO - [main.py:200] - Groq client initialized successfully
+2025-06-17 22:18:18,711 - main - INFO - [main.py:692] - Groq client connection verified
+2025-06-17 22:18:18,711 - main - INFO - [main.py:697] - Application startup completed successfully
+2025-06-17 22:18:32,945 - main - INFO - Application started
+2025-06-17 22:19:02,133 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:21:55,066 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:25:06,994 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:25:13,240 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:28:03,317 - main - INFO - Application started
+2025-06-17 22:28:18,279 - main - INFO - Application started
+2025-06-17 22:29:20,524 - main - INFO - Received query: show me all female customers
+2025-06-17 22:29:21,631 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:29:21,635 - main - INFO - Query execution time: 1.11s
+2025-06-17 22:30:00,417 - main - INFO - Received query: show me all female customers who live in mumbai
+2025-06-17 22:30:01,039 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:30:01,040 - main - INFO - Query execution time: 0.62s
+2025-06-17 22:36:48,277 - main - INFO - Received query: show me all male customers
+
+2025-06-17 22:36:49,921 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:36:49,922 - main - INFO - Query execution time: 1.65s
+2025-06-17 22:37:11,522 - main - INFO - Received query: show me all male customers from location new york
+
+2025-06-17 22:37:12,034 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:37:12,035 - main - INFO - Query execution time: 0.51s
+2025-06-17 22:37:29,319 - main - INFO - Received query: show me all customers from location new york
+
+2025-06-17 22:37:29,803 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:37:29,805 - main - INFO - Query execution time: 0.49s
+2025-06-17 22:46:22,746 - main - INFO - Application started
+2025-06-17 22:46:22,820 - main - INFO - Received query: show me all female customers who live in mumbaii
+2025-06-17 22:46:23,820 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:46:23,823 - main - INFO - Query execution time: 1.00s
+2025-06-17 22:54:10,864 - main - INFO - Application started
+2025-06-17 22:54:25,075 - main - INFO - Application started
+2025-06-17 22:55:08,686 - main - INFO - Received query: show me all male customers who live in newyork
+2025-06-17 22:55:09,743 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:55:09,745 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'male' AND lower(location) = 'newyork'
+2025-06-17 22:55:09,746 - main - INFO - Query successful, execution time: 1.06s
+2025-06-17 22:55:35,311 - main - INFO - Received query: show me all male customers from location new york
+2025-06-17 22:55:36,084 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:55:36,085 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'male' AND lower(location) = 'new york'
+2025-06-17 22:55:36,086 - main - INFO - Query successful, execution time: 0.77s
+2025-06-17 22:55:54,920 - main - INFO - Received query: show me all customers from location new york
+2025-06-17 22:55:55,775 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:55:55,776 - main - INFO - Generated SQL: SELECT * FROM customers WHERE LOWER(location) = 'new york'
+2025-06-17 22:55:55,778 - main - INFO - Query successful, execution time: 0.86s
+2025-06-17 22:56:10,992 - main - INFO - Received query: show me all customers name from location new york
+2025-06-17 22:56:11,783 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:56:11,784 - main - INFO - Generated SQL: SELECT name FROM customers WHERE LOWER(location) = 'new york'
+2025-06-17 22:56:11,785 - main - INFO - Query successful, execution time: 0.79s
+2025-06-17 22:56:44,265 - main - INFO - Received query: show me all male customers name from location new york
+2025-06-17 22:56:45,157 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:56:45,159 - main - INFO - Generated SQL: SELECT name 
+FROM customers 
+WHERE gender = 'male' AND lower(location) = 'new york'
+2025-06-17 22:56:45,160 - main - INFO - Query successful, execution time: 0.90s
+2025-06-17 22:57:09,315 - main - INFO - Received query: show me all records
+2025-06-17 22:57:10,237 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:57:10,238 - main - INFO - Generated SQL: SELECT * FROM customers
+2025-06-17 22:57:10,239 - main - INFO - Query successful, execution time: 0.92s
+2025-06-17 22:58:05,719 - main - INFO - Received query: show me all female customer from location mumbai
+2025-06-17 22:58:06,820 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 22:58:06,821 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'female' AND lower(location) = 'mumbai'
+2025-06-17 22:58:06,822 - main - INFO - Query successful, execution time: 1.10s
+2025-06-17 23:01:46,329 - main - INFO - Application started
+2025-06-17 23:05:03,139 - main - INFO - Received query: show me all female customer
+2025-06-17 23:05:04,258 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 23:05:04,261 - main - INFO - LLM raw response: SELECT * FROM customers WHERE gender = 'Female'
+2025-06-17 23:05:04,261 - main - INFO - Extracted SQL: SELECT * FROM customers WHERE gender = 'Female'
+2025-06-17 23:05:04,262 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'Female'
+2025-06-17 23:05:04,263 - main - INFO - Query successful, execution time: 1.12s
+2025-06-17 23:06:12,281 - main - INFO - Application started
+2025-06-17 23:06:52,036 - main - INFO - Received query: show me all female customer from location mumbai
+2025-06-17 23:06:53,193 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 23:06:53,195 - main - INFO - LLM raw response: SELECT * FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-17 23:06:53,196 - main - INFO - Extracted SQL: SELECT * FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-17 23:06:53,196 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'Female' AND location = 'Mumbai'
+2025-06-17 23:06:53,197 - main - INFO - Query successful, execution time: 1.16s
+2025-06-17 23:08:33,654 - main - INFO - Received query: show me all male customer from location mumbai
+2025-06-17 23:08:34,728 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 23:08:34,729 - main - INFO - LLM raw response: SELECT * FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-17 23:08:34,729 - main - INFO - Extracted SQL: SELECT * FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-17 23:08:34,729 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'Male' AND location = 'Mumbai'
+2025-06-17 23:08:34,730 - main - INFO - Query successful, execution time: 1.08s
+2025-06-17 23:08:58,293 - main - INFO - Received query: show me all male customer from location new york
+2025-06-17 23:08:59,102 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 23:08:59,103 - main - INFO - LLM raw response: SELECT * FROM customers WHERE gender = 'Male' AND location = 'New York'
+2025-06-17 23:08:59,103 - main - INFO - Extracted SQL: SELECT * FROM customers WHERE gender = 'Male' AND location = 'New York'
+2025-06-17 23:08:59,104 - main - INFO - Generated SQL: SELECT * FROM customers WHERE gender = 'Male' AND location = 'New York'
+2025-06-17 23:08:59,105 - main - INFO - Query successful, execution time: 0.81s
+2025-06-17 23:09:53,102 - main - INFO - Received query: show me all  customer from  mumbai
+2025-06-17 23:09:54,120 - httpx - INFO - HTTP Request: POST https://api.groq.com/openai/v1/chat/completions "HTTP/1.1 200 OK"
+2025-06-17 23:09:54,121 - main - INFO - LLM raw response: SELECT * FROM customers WHERE location = 'Mumbai'
+2025-06-17 23:09:54,121 - main - INFO - Extracted SQL: SELECT * FROM customers WHERE location = 'Mumbai'
+2025-06-17 23:09:54,121 - main - INFO - Generated SQL: SELECT * FROM customers WHERE location = 'Mumbai'
+2025-06-17 23:09:54,122 - main - INFO - Query successful, execution time: 1.02s
